@@ -1,0 +1,1230 @@
+/**********************
+****** CSS reset ******
+**********************/
+
+body,br,div,section,dl,dt,dd,ul,ol,li,pre,form,fieldset,input,textarea,p,blockquote,th,td {margin:0; padding:0;}
+html,body {margin:0; padding:0;}
+fieldset,img {border:0;}
+input, textarea {border:1px solid #fff; padding:5px; color:#979797;}
+address,caption,cite,code,dfn,th,var {font-style:normal; font-weight:normal;}
+ol,ul {list-style:none;}
+q:before,q:after {content:'';}
+a {text-decoration: none;}
+
+
+
+/********************************
+********** Font styles **********
+********************************/
+
+@font-face {
+    font-family: "RanelteNorm";
+    src: url("../fonts/ranelte.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Ranelte";
+    src: url("../fonts/ranelte_bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "RanelteBold";
+    src: url("../fonts/ranelte_exbold.otf") format("opentype");
+}
+
+html {
+    background-color: #cdcdcd;
+    font-family: "Ranelte", sans-serif;
+}
+
+
+/************************************
+********** FEJLÉC STÍLUSOK **********
+************************************/
+
+header .fejlec-mobil, .mobile, .visszaszamlalo_3d-mobile, .visszaszamlalo-mobile {display: none;}
+
+header {
+    height: 240px;
+    background-image: url("../images/header_bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 999;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+header .fejlec {
+    text-align: right;
+    padding: 20px;
+    padding-right: 30px;
+}
+
+header .fejlec p {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #aec9d9;
+}
+
+header .fejlec span {
+    font-size: 1rem;
+    color: #aec9d9;
+}
+
+.fejlec-link {
+    margin-top: 50px;
+}
+
+.fejlec-link a {
+    color: #f0f0f0;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+
+.fejlec-link a:hover {
+    color: #aec9d9;
+    text-decoration: none;
+}
+
+.fejlec-link img {
+    width: 20px;
+    margin-left: 10px;
+}
+
+
+/*******************************************
+********** MAIN tartalom stílusok **********
+*******************************************/
+
+main {
+    width: 67%;
+    margin: 0 auto;
+}
+
+.first-section {
+	background-image: url("../images/first_section_bg.png");
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+#first {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.vizsgazott {
+    position: absolute;
+    left: -270px;
+    top: -140px;
+    z-index: 1111;
+    transform: rotate(-12deg);
+}
+
+.vizsgazott img {
+    width: 200px;
+}
+
+.bemutatkozik {
+    display: flex;
+    align-items: center;
+    height: 116px;
+    position: absolute;
+    left: 50%;
+    top: -58px;
+    z-index: 1111;
+    transform: translateX(-50%);
+    background-image: url("../images/bemutatkozik_bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bemutatkozik h1 {
+    width: 708px;
+    text-align: center;
+    color: #fff;
+	font-size: 2.3rem;
+	text-shadow: 2px 2px 2px #000000;
+}
+
+.bemutatkozik span {
+    color: #fff;
+    font-size: 2.3rem;
+	font-family: "RanelteBold", sans-serif;
+	text-shadow: 2px 2px 2px #000000;
+}
+
+#first h2 {
+    padding-top: 120px;
+    margin: 0 auto 2rem;
+    font-family: "RanelteBold", sans-serif;
+    font-size: 1.8rem;
+}
+
+#first p {
+    line-height: 1.5rem;
+    padding: 1rem 0;
+    margin: 0;
+}
+
+#first h3 {
+    font-family: "RanelteBold", sans-serif;
+    font-size: 1.5rem;
+    padding: 2rem 0;
+    margin: 0;
+}
+
+
+/*********************************************
+********** Section 1 lista stílusok **********
+*********************************************/
+
+ul {
+    padding: 1rem 0 1rem 100px;
+}
+
+ul li {
+    list-style-type: "- ";
+}
+
+
+/*******************************************
+********** MAIN táblázat stílusok **********
+*******************************************/
+
+.tablazat {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 50px 0;
+}
+
+table {
+    border: 6px solid #000;
+    border-collapse: collapse;
+    font-size: 1.3rem;
+}
+
+.first-cell, th {
+    font-family: "RanelteBold", sans-serif;
+}
+
+th, td {
+    width: 130px;
+    height: 60px;
+    text-align: center;
+    border: 2px solid #000;
+	border-left: 4px solid #000;
+	border-right: 4px solid #000;
+}
+
+th {
+    background: #aec9d9;
+}
+
+td {
+    background: #fff;
+}
+
+td.first-cell {
+    background: #cdcdcd;
+}
+
+
+/***************************************
+********** MAIN gomb stílusok **********
+***************************************/
+
+.erdekel {
+	display: flex;
+    align-items: center;
+	justify-content: center;
+	padding-bottom: 30px;
+}
+
+.erdekel-inner {
+    display: flex;
+    align-items: center;
+	justify-content: center;
+    height: 67px;
+	width: 300px;
+	margin: 20px auto 30px auto;
+    background-color: #09172d;
+	-webkit-transform: skew(-10deg);
+	transform: skew(-10deg);
+	border-radius: 6px;
+	transition: all 0.3s;
+}
+
+.erdekel-inner p {
+	-webkit-transform: skew(10deg);
+	transform: skew(10deg);
+	padding-left: 5px;
+	text-align: center;
+    color: #fff;
+    font-size: 1.56rem;
+}
+
+.erdekel-inner:hover {    
+    background-color: #305f93;
+}
+
+
+/*********************************************
+********** Section 2 stílusok **********
+*********************************************/
+
+.second-section {
+	background-image: url("../images/second_section_bg.png");
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+#second {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#second h2 {
+    padding-top: 80px;
+    margin: 0 auto 2rem;
+    font-family: "RanelteBold", sans-serif;
+    font-size: 1.8rem;
+	color: #f0f0f0;
+}
+
+#second p {
+    line-height: 1.5rem;
+    padding: 1rem 0;
+    margin: 0;
+	color: #f0f0f0;
+}
+
+#second h3 {
+    font-family: "RanelteBold", sans-serif;
+    font-size: 1.5rem;
+    padding: 2rem 0;
+    margin: 0;
+	color: #f0f0f0;
+}
+
+/*********************************************
+********** Section 2 lista stílusok **********
+*********************************************/
+
+.second-section ul {
+    padding: 1rem 0 1rem 100px;
+}
+
+.second-section ul li {
+    list-style-type: "- ";
+	color: #f0f0f0;
+}
+
+
+/*********************************************
+********** Section 3 (ikonok) stílusok **********
+*********************************************/
+
+#third {
+    position: relative;
+    margin: 0 auto;
+}
+
+#third h2 {
+    padding-top: 80px;
+    margin: 0 auto 2rem;
+    font-family: "RanelteBold", sans-serif;
+    font-size: 1.8rem;
+	text-align: center;
+}
+
+.icons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 10px auto 60px auto;
+}
+
+.icon a {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: 260px;
+	height: 260px;
+	margin: 10px;
+	border-radius: 20px;
+	background: #f0f0f0;
+}
+
+.icon img {
+	display: flex;
+	width: 100px;
+	margin-top: 60px;
+}
+
+.icon p {
+	text-align: center;
+	width: 200px;
+	margin-top: 30px;
+	color: #000;
+}
+
+
+/*********************************************
+********** Section 4 stílusok **********
+*********************************************/
+
+.fourth-section {
+	background-image: url("../images/fourth_section_bg.png");
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+#fourth {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+	display: flex;
+}
+
+#fourth h2 {
+    margin: 0 auto 1rem;
+    font-family: "RanelteBold", sans-serif;
+    font-size: 1.8rem;
+}
+
+.fourth-left {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-right: 1px solid #f0f0f0;
+	margin: 60px 0;
+	padding: 0 30px;
+}
+
+/* Biztosításközvetítő section */
+
+.fourth-left-contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.fourth-left .spacer {
+	width: 70px;
+	border-bottom: 2px solid #000;
+	margin: 20px;
+}
+
+.fourth-left-contact-content {
+	text-align: center;
+}
+
+.fourth-left-contact-content h4, .fourth-left-contact-content p {
+	margin: 0;
+	padding: 0;
+}
+
+.fourth-left-contact-content h4 {
+	font-size: 1.7rem;
+}
+
+.fourth-left-contact-content p {
+	font-size: 1.2rem;
+}
+
+.fourth-left .spacer-2 {
+	width: 94%;
+	border-bottom: 1px solid #f0f0f0;
+	margin: 30px auto;
+}
+
+/* Határidő section*/
+
+.fourth-left-counter {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+#fourth .fourth-left-counter h2 {
+	margin-bottom: 40px;
+}
+
+.visszaszamlalo {
+	display: flex;
+	width: 85%;
+}
+
+.visszaszamlalo > div {
+	width: 25%;
+	display: flex;
+	padding: 0px 3%;
+}
+
+.visszaszamlalo > div > div {
+	width: 50%;
+	padding: 8px 2px;
+	margin: 0 2px;
+	background-color: #f0f0f0;
+	font-size: 1.8rem;
+	text-align: center;
+	color: #000;
+	border-radius: 12px;
+}
+
+.visszaszamlalo > div > p {
+	text-align: center !important;
+	font-size: 1rem;
+	width: 100%;
+	padding: 10px 0px 0px 0px;
+}
+
+.visszaszamlalo_3d > div {
+	-webkit-perspective: 300px;
+  perspective: 300px;		
+}
+
+.visszaszamlalo_3d > div > div {
+	transform: rotatex(0deg);
+  -webkit-transform: rotatex(0deg);	
+	-webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-out;
+	-ms-transition: all .2s ease-out;
+	-o-transition: all .2s ease-out;
+	transition: all .2s ease-out;  
+}
+
+/* Üzenet section*/
+
+.fourth-right {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 60px 30px;
+}
+
+form {
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.2rem;
+}
+
+input[type=text], textarea {
+	width: 100%;
+	margin: 3px 0 20px 0;
+	padding: 10px;
+	border-radius: 10px;
+	color: #000;
+	font-size: 0.8rem;
+	font-family: 'Ranelte', sans-serif;
+}
+
+label {
+	align-self: flex-start;
+}
+
+input:focus, textarea:focus {
+    outline:none;
+	color: #000;
+	font-size: 0.8rem;
+	font-family: 'Ranelte', sans-serif;
+}
+
+textarea {
+	resize: none;
+	height: 160px;
+}
+
+.submit-button {
+	display: flex;
+    align-items: center;
+	justify-content: center;
+    height: 50px;
+	width: 163px;
+	margin: 20px auto 30px auto;
+    background-color: #09172d;
+	-webkit-transform: skew(-10deg);
+	transform: skew(-10deg);
+	border-radius: 6px;
+	transition: all 0.3s;
+}
+
+.submit-button:hover {
+	background-color: #305f93;
+}
+
+input[type=submit] {
+	height: 50px;
+	width: 160px;
+	background: none;
+	border: none;
+	text-align: center;
+    color: #fff;
+    font-size: 1.3rem;
+	font-family: 'Ranelte', sans-serif;
+	cursor: pointer;
+	-webkit-transform: skew(10deg);
+	transform: skew(10deg);
+	padding-left: 5px;
+}
+
+
+/************************************
+********** Lábléc stílusok **********
+************************************/
+
+.footer-logo {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background: #000;
+	-webkit-box-shadow: 0px -2px 10px 0px rgba(0,0,0,1);
+	-moz-box-shadow: 0px -2px 10px 0px rgba(0,0,0,1);
+	box-shadow: 0px -2px 10px 0px rgba(0,0,0,1);
+}
+
+.footer-logo img {
+	width: 70px;
+	height: auto;
+}
+
+.footer-content {
+	display: flex;
+    align-items: center;
+	justify-content: center;
+	flex-direction: column;
+    height: 300px;
+	margin: 0;
+    background-image: url("../images/footer_bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	color: white;
+	text-align: center;
+}
+
+.footer-content span {
+	font-size: 1.2rem;
+}
+
+.footer-content img {
+	width: 120px;
+	margin: 0 10px;
+	transform: translateY(4px);
+}
+
+.footer-contact h3 {
+	font-size: 1.6rem;
+	color: #f0f0f0;
+}
+
+.footer-contact p, .footer-contact p a {
+	font-size: 1.2rem;
+	color: #cdcdcd;
+	margin: 4px auto;
+}
+
+.footer-contact p a {
+	text-decoration: underline;
+	transition: all 0.3s;
+}
+
+.footer-contact p a:hover {
+	color: #fff;
+}
+
+
+/**********************************
+********** Media queries **********
+**********************************/
+
+@media screen and (max-width: 1699px) {
+	.icon a {
+		width: 230px;
+		height: 230px;
+	}
+
+	.icon img {
+		width: 90px;
+		margin-top: 40px;
+	}
+}
+
+@media screen and (max-width: 1550px) {
+	.icon a {
+		width: 210px;
+		height: 210px;
+	}
+
+	.icon img {
+		width: 80px;
+	}
+
+	.fejlec-link {
+		margin-top: 30px;
+	}
+}
+
+@media screen and (max-width: 1399px) {
+	main {
+		width: 80%;
+	}
+
+	#first, #second {
+		width: 85%;
+	}
+
+	.vizsgazott {
+		left: -160px;
+	}
+
+	.bemutatkozik {
+		height: 100px;
+		top: -50px;
+	}
+
+	.bemutatkozik h1 {
+		width: 610px;
+		font-size: 2rem;
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	.visszaszamlalo {
+		width: 100%;
+	}
+
+	.vizsgazott {
+		left: -140px;
+		top: -125px;
+	}
+
+	.vizsgazott img {
+		width: 180px;
+	}
+
+	.icon a {
+		width: 180px;
+		height: 180px;
+	}
+
+	.icon img {
+		width: 70px;
+		margin-top: 30px;
+	}
+
+	.icon p {
+		width: 150px;
+		font-size: 0.9rem;
+		margin-top: 20px;
+	}
+
+	.visszaszamlalo > div {
+		padding: 0px 2%;
+	}
+}
+
+@media screen and (max-width: 1020px) {
+	main {
+		width: 100%;
+	}
+
+	.vizsgazott {
+		left: -40px;
+		top: -220px;
+	}
+
+	.vizsgazott img {
+		width: 150px;
+	}
+
+	#first h2 {
+		padding-top: 80px;
+		margin: 0 auto 1rem;
+	}
+
+	.erdekel-inner {
+		margin: 0px auto 20px auto;
+	}
+
+	#second h2, #third h2 {
+		padding-top: 50px;
+		margin: 0 auto 1rem;
+	}
+
+	.visszaszamlalo > div > div {
+		padding: 6px 2px;
+		font-size: 1.6rem;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	table {
+		font-size: 1rem;
+	}
+
+	th, td {
+		height: 50px;
+	}
+
+	.icon a {
+		width: 160px;
+		height: 160px;
+	}
+
+	.icon img {
+		width: 50px;
+	}
+
+	.fourth-left {
+		margin: 40px 0;
+		padding: 0 20px;
+	}
+
+	.fourth-right {
+		margin: 40px 20px;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	html {font-size: 14px;}
+
+	.bemutatkozik {
+		height: 78px;
+		top: -40px;
+	}
+
+	.bemutatkozik h1 {
+		width: 480px;
+	}
+}
+
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXX      XXXXX      XXXXXXX       XXXXXXX         XXXXX   XXX   XXXXXXXXXX          XXXX
+XXXX   X   XXX   X   XXXXX    XXX    XXXXX   XXXX   XXXX   XXX   XXXXXXXXXX   XXXXXXXXXXX
+XXXX   XX   X   XX   XXXX   XXXXXXX   XXXX   XXXXX   XXX   XXX   XXXXXXXXXX   XXXXXXXXXXX
+XXXX   XXX     XXX   XXX   XXXXXXXXX   XXX   XXXX   XXXX   XXX   XXXXXXXXXX   XXXXXXXXXXX
+XXXX   XXXX   XXXX   XXX   XXXXXXXXX   XXX         XXXXX   XXX   XXXXXXXXXX          XXXX
+XXXX   XXXXXXXXXXX   XXX   XXXXXXXXX   XXX   XXXX   XXXX   XXX   XXXXXXXXXX   XXXXXXXXXXX
+XXXX   XXXXXXXXXXX   XXXX   XXXXXXX   XXXX   XXXXX   XXX   XXX   XXXXXXXXXX   XXXXXXXXXXX
+XXXX   XXXXXXXXXXX   XXXXX    XXX    XXXXX   XXXX   XXXX   XXX   XXXXXXXXXX   XXXXXXXXXXX
+XXXX   XXXXXXXXXXX   XXXXXXX       XXXXXXX         XXXXX   XXX          XXX          XXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+
+@media screen and (max-width: 480px) {
+	html {
+		font-size:12px;
+		font-family: "RanelteNorm", sans-serif;
+	}
+	header .fejlec {display: none;}
+	.visszaszamlalo_3d-mobile, .visszaszamlalo-mobile {display: flex;}
+
+	header {
+		height: 180px;
+	}	
+
+	header .fejlec-mobil {
+		display: block;
+		text-align: center;
+		padding: 20px 10px;
+	}
+	
+	header .fejlec-mobil p {
+		font-size: 0.63rem;
+		margin-bottom: 10px;
+		color: #aec9d9;
+	}
+	
+	.fejlec-link-mobil {
+		margin: 0 auto;
+		padding: 2px 5px;
+		background: #fff;
+		max-width: 270px;
+	}
+	
+	.fejlec-link-mobil a {
+		color: #09162b;
+		text-decoration: none;
+		transition: all 0.3s;
+		font-size: 0.9rem;
+	}
+	
+	.fejlec-link-mobil img {
+		width: 20px;
+		margin-left: 10px;
+		margin-bottom: -3px;
+	}
+
+	main {width: 85%;}
+
+	.vizsgazott {
+		position: absolute;
+		top: -110px;
+		left: 50%;
+		z-index: 1111;
+		transform: translateX(-50%);
+	}
+	
+	.vizsgazott img {
+		transform: rotate(-12deg);
+		width: 75px;
+	}
+
+	.bemutatkozik {
+		height: 38px;
+		top: -20px;
+		background-image: url("../images/bemutatkozik_bg_mobile.png");
+	}
+	
+	.bemutatkozik h1 {
+		width: 235px;
+		font-size: 1.1rem;
+		text-shadow: 1px 1px 2px #000000;
+	}
+	
+	.bemutatkozik span {
+		font-size: 1.1rem;
+		text-shadow: 1px 1px 2px #000000;
+		font-family: "Ranelte", sans-serif;
+	}
+
+	.first-section {
+		background-image: url("../images/first_section_bg_mobile.png");
+	}
+
+	#first h2 {
+		padding-top: 50px;
+		margin: 0 auto 1rem;
+		font-size: 1.4rem;
+		text-align: center;
+		font-family: "Ranelte", sans-serif;
+	}
+
+	#first h3 {
+		font-family: "Ranelte", sans-serif;
+	}
+	
+	#first p {
+		line-height: 1.8rem;
+		padding: 1rem 0;
+		margin: 0;
+	}
+
+	ul {
+		padding: 1rem 0 0.8rem 30px;
+	}
+	
+	ul li {
+		padding-bottom: 4px;
+	}
+
+	.tablazat {
+		display: flex;
+		justify-content: center;
+		padding: 20px 0 30px 0;
+	}
+	
+	table {
+		border: 3px solid #000;
+		font-size: 0.75rem;
+		padding: 20px 0 30px 0;
+	}
+
+	.first-cell, th {
+		font-family: "Ranelte", sans-serif;
+	}
+	
+	th, td {
+		height: 24px;
+		width: 70px;
+		border: 1px solid #000;
+		border-left: 1px solid #000;
+		border-right: 1px solid #000;
+	}
+
+	.erdekel {
+		padding-bottom: 30px;
+	}
+	
+	.erdekel-inner {
+		height: 50px;
+		width: 230px;
+		margin: 0 auto;
+		background-color: #09172d;
+	}
+	
+	.erdekel-inner p {
+		padding-left: 5px;
+		font-size: 1.8rem;
+	}
+
+	.second-section {
+		background-image: url("../images/second_section_bg_mobile.png");
+	}
+
+	#second h2 {
+		padding-top: 30px;
+		margin: 0 auto 1rem;
+		font-size: 1.4rem;
+		text-align: center;
+		font-family: "Ranelte", sans-serif;
+	}
+
+	#second h3 {
+		font-family: "Ranelte", sans-serif;
+	}
+	
+	#second p {
+		line-height: 1.8rem;
+		padding: 1rem 0;
+		margin: 0;
+	}
+	
+	.second-section ul {
+		padding: 1rem 0 0.8rem 30px;
+	}
+	
+	.second-section ul li {
+		padding-bottom: 4px;
+		color: #f0f0f0;
+	}
+
+	#third h2 {
+		padding-top: 30px;
+		margin: 0 auto 1rem;
+		font-size: 1.4rem;
+		text-align: center;
+		font-family: "Ranelte", sans-serif;
+	}
+	
+	.icons {
+		margin: 10px auto 40px auto;
+	}
+	
+	.icon a {
+		width: 125px;
+		height: 125px;
+		margin: 5px;
+		border-radius: 10px;
+	}
+	
+	.icon img {
+		margin-top: 20px;
+	}
+	
+	.icon p {
+		text-align: center;
+		width: 110px;
+		margin-top: 10px;
+		font-size: 0.8rem;
+	}
+
+	.fourth-section {
+		background-image: url("../images/fourth_section_bg_mobile.png");
+	}
+
+	#fourth {
+		position: relative;
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	#fourth h2 {
+		margin: 0 auto 1rem;
+		font-family: "Ranelte", sans-serif;
+		font-size: 1.8rem;
+	}
+	
+	.fourth-left {
+		width: 100%;
+		border-right: none;
+		margin: 30px 0;
+		padding: 0;
+	}
+	
+	.fourth-left .spacer {
+		width: 50px;
+		margin: 10px;
+	}
+	
+	.fourth-left-contact-content h4 {
+		font-size: 2rem;
+	}
+	
+	.fourth-left-contact-content p {
+		font-size: 1.4rem;
+	}
+	
+	.fourth-left .spacer-2 {
+		width: 85%;
+		margin: 40px auto;
+	}
+
+	/* Határidő section*/
+
+	#fourth .fourth-left-counter h2 {
+		margin-bottom: 10px;
+	}
+
+	.visszaszamlalo-mobile {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		width: 90%;
+	}
+
+	.visszaszamlalo-mobile > div {
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.visszaszamlalo-mobile > div > div {
+		display: flex;
+		margin: 10px 0;
+	}
+
+	.visszaszamlalo-mobile > div > div > div {
+		width: 20px;
+		padding: 10px;
+		margin: 0 3px;
+		background-color: #f0f0f0;
+		font-size: 2.2rem;
+		text-align: center;
+		color: #000;
+		border-radius: 12px;
+		font-family: "Ranelte", sans-serif;
+	}
+
+	.visszaszamlalo-mobile > div > article > p {
+		text-align: center !important;
+		font-size: 1.6rem;
+		width: 100%;
+		padding: 0 0 20px 0;
+		font-family: "Ranelte", sans-serif;
+	}
+
+	.visszaszamlalo_3d-mobile > div {
+		-webkit-perspective: 1000px;
+		perspective: 1000px;		
+	}
+
+	.visszaszamlalo_3d-mobile > div > div > div {
+		transform: rotatex(0deg);
+		-webkit-transform: rotatex(0deg);	
+		-webkit-transition: all .2s ease-out;
+		-moz-transition: all .2s ease-out;
+		-ms-transition: all .2s ease-out;
+		-o-transition: all .2s ease-out;
+		transition: all .2s ease-out;  
+	}
+
+	/* Üzenet section*/
+
+	.fourth-right {
+		width: 85%;
+		margin: 0;
+		padding: 30px 0;
+		border-top: 1px solid #f0f0f0;
+	}
+
+	form {
+		width: 92%;
+		font-size: 1.5rem;
+	}
+
+	input[type=text], textarea {
+		font-size: 1.3rem;
+		font-family: 'RanelteNorm', sans-serif;
+	}
+
+	input:focus, textarea:focus {
+		font-size: 1.3rem;
+		font-family: 'RanelteNorm', sans-serif;
+	}
+
+	textarea {
+		resize: none;
+		height: 180px;
+	}
+
+	.submit-button {
+		height: 50px;
+		width: 160px;
+		margin: 0 auto;
+	}
+
+	input[type=submit] {
+		font-size: 2rem;
+	}
+
+	.mobile {display:block;}
+	.desktop {display: none;}
+
+	.footer-logo {
+		-webkit-box-shadow: 0px -2px 6px 0px rgba(0,0,0,1);
+		-moz-box-shadow: 0px -2px 6px 0px rgba(0,0,0,1);
+		box-shadow: 0px -2px 6px 0px rgba(0,0,0,1);
+	}
+	
+	.footer-logo img {
+		width: 50px;
+	}
+
+	.footer-content {
+		height: 330px;
+	}
+
+	.footer-content span {
+		font-size: 1.4rem;
+		margin-bottom: 24px;
+	}
+
+	.footer-content span p {
+		font-size: 1.8rem;
+		margin-bottom: 12px;
+	}
+	
+	.footer-content img {
+		width: 140px;
+		transform: translateY(8px);
+		margin: 0 10px 0 0;
+	}
+	
+	.footer-contact h3 {
+		font-size: 2rem;
+		color: #f0f0f0;
+	}
+	
+	.footer-contact p, .footer-contact p a {
+		font-size: 1.4rem;
+	}
+
+}
