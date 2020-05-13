@@ -8,7 +8,5 @@ var indexjs=new function() {
 			if ($(this).val()=='') $(this).removeClass('input_nem_ures');
 			else $(this).addClass('input_nem_ures');
 		});
-		
 	}
-	
 }
