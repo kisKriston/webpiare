@@ -898,14 +898,14 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 	}
 
 	.bemutatkozik {
-		height: 38px;
+		height: 40px;
 		top: -20px;
 		background-image: url("../images/bemutatkozik_bg_mobile.png");
 	}
 	
 	.bemutatkozik h1 {
-		width: 235px;
-		font-size: 1.1rem;
+		width: 246px;
+		font-size: 1.05rem;
 		text-shadow: 1px 1px 2px #000000;
 	}
 	
